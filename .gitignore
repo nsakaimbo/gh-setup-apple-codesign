@@ -1,0 +1,24 @@
+# ignore all files in the root and subdirectories
+*
+
+# allow all directories (so Git can actually look inside them)
+!*/
+
+# allow files with extensions (e.g., .c, .cpp, .md, .txt)
+!*.*
+
+# ignore
+.DS_Store
+signing_artifacts
+*.zip
+
+# GitHub CLI extension binaries
+gh-setup-apple-codesign
+gh-setup-apple-codesign-*
+
+# manually allow specific extensionless files
+!README
+!LICENSE
+!Makefile
+
+
