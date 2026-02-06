@@ -2,35 +2,18 @@
 
 A command-line tool for generating Apple Development signing certificates by creating a Certificate Signing Request (CSR), submitting it to the App Store Connect API, and bundling the signed certificate into multiple formats for use with Xcode and macOS Keychain.
 
-## Purpose
-
-This tool automates the process of creating Apple Development certificates without requiring manual intervention through the Apple Developer portal. It's particularly useful for:
-
-- **CI/CD Pipelines**: Automate certificate generation in GitHub Actions or other CI systems
-- **Team Onboarding**: Quickly provision development certificates for new team members
-- **Certificate Rotation**: Programmatically regenerate certificates when they expire
-- **Bulk Operations**: Generate multiple certificates across different Apple Developer accounts
 
 ## Features
 
 - ✅ **Cross-platform**: Works on macOS, Linux, and Windows
 - ✅ **No external dependencies**: Uses native Go cryptography libraries
 - ✅ Interactive prompts for missing configuration (no hardcoding required)
-- ✅ Generates 2048-bit RSA private keys
-- ✅ Creates Certificate Signing Requests (CSR) with custom subject fields
-- ✅ Integrates with App Store Connect API via JWT authentication
-- ✅ Outputs multiple artifact formats: `.key`, `.p12`, `.pem`
 - ✅ Optional password protection for all artifacts
-- ✅ macOS Keychain-compatible PKCS12 bundles (uses legacy RC2 encryption)
-- ✅ OpenSSL-compatible encrypted keys (PKCS#8 with AES-256-CBC)
-- ✅ Stub mode for testing without real API calls
-- ✅ Comprehensive test coverage
 
 ## Prerequisites
 
 - **Apple Developer Account** with API access enabled
 - **App Store Connect API Key** (.p8 file) with certificate management permissions
-- For manual installation: **Go 1.19+** (for building from source)
 
 ### Getting an App Store Connect API Key
 
