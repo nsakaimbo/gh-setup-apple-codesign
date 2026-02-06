@@ -5,8 +5,7 @@ A command-line tool for generating Apple Development signing certificates by cre
 
 ## Features
 
-- ✅ **Cross-platform**: Works on macOS, Linux, and Windows
-- ✅ **No external dependencies**: Uses native Go cryptography libraries
+- ✅ Uses native Go cryptography libraries
 - ✅ Interactive prompts for missing configuration (no hardcoding required)
 - ✅ Optional password protection for all artifacts
 
